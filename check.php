@@ -31,6 +31,7 @@ if($content == ''){
     <meta charset="utf-8">
     <title>入力内容確認</title>
 </head>
+
 <body>
     <h1>入力内容確認</h1>
     <p><?php echo $nickname_result ?></p>
