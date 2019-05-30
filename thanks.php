@@ -1,7 +1,10 @@
 <?php
-    $nickname = $_POST['nickname'];
-    $email = $_POST['email'];
-    $content = $_POST['content'];
+
+    //関数の呼び出し
+    require_once('function.php');
+    $nickname = h($_POST['nickname']);
+    $email = h($_POST['email']);
+    $content = h($_POST['content']);
 ?>
 
 <!DOCTYPE html>

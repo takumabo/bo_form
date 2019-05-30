@@ -1,8 +1,15 @@
 <?php
+//メソッドがGETの時はトップページにリダイレクト(このページに送りつける)
+if ($_SERVER['REQUEST_METHOD'] === 'GET') {
+      header('Location: index.html');
+}
+
+//関数の呼び出し
+require_once('function.php');
 // スーパーグローバル関数
-$nickname = $_POST['nickname'];
-$email = $_POST['email'];
-$content = $_POST['content'];
+$nickname = h($_POST['nickname']);
+$email = h($_POST['email']);
+$content = h($_POST['content']);
 
 if ($nickname == ''){
     $nickname_result = 'ニックネームが入力されていません。';
