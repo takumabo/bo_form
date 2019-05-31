@@ -5,6 +5,10 @@
     $nickname = h($_POST['nickname']);
     $email = h($_POST['email']);
     $content = h($_POST['content']);
+    //DB(dbconnect.php)との接続
+    require_once('dbconnect.php');
+    $stmt = $dbh->prepare('INSERT INTO surveys (nickname, email, content) VALUES(?, ?, ?)');
+    $stmt->execute([$nickname , $email , $content]);
 ?>
 
 <!DOCTYPE html>
