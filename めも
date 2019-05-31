@@ -1,0 +1,52 @@
+データベースは３種類ある
+
+階層型・・・トップダウン式のデータ構造
+
+ネットワーク型・・・場所関係なくアクセスできるデータ構造
+
+リレーショナル型・・・二次元（列と行）で管理するデータ構造（※イメージはエクセル）
+種類
+oracle
+MySQL(無料)
+SQL Server
+Postgre SQL
+
+データベースでできること (MyAdmin上の操作が>以下)
+作成(Create) >INSERT
+取得(Read) >SELECT
+更新(Update) >UPDATE
+削除(Delwte) >DELETE
+
+GUI(Graphical User Interface)・・・見た目だけでデータなどを操作できること(sourcetreeとか)
+CUI(Character-based User Interface)・・・コマンドライン(terminal)を使ってデータを操作すること
+
+
+MyAdmin操作
+※PRIMARYにすると自動的に選択されている。
+SELECT文・・・レコードを選択
+INSERT文・・・レコードを挿入
+UPDATE文・・・レコードを更新
+DELETE文・・・レコードを削除
+
+auto_incriment
+自動採番
+A_Iの略
+
+MyAdominについて
+完全一致でデータを検索する場合、
+`カラム名` = "値"
+
+曖昧な検索をしたい時は
+email の値の最後が、.comで終わる場合
+email LIKE "%.com"  ←LIKEが大文字なことに注意しましょう
+
+email の値の最初がseedで始まる場合は
+email LIKE "seed%"
+
+＊（ワイルドカート）について
+
+更新
+UPDATE `surveys` SET `nickname`="seedsan" WHERE `id`=1
+
+削除
+DELETE FROM `surveys` WHERE `id`=2
