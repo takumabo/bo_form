@@ -1,0 +1,36 @@
+.top {
+  background-color: #99CC00;
+
+  color:white;
+  width: 800px;
+  margin: 0;
+}
+
+.top h2 {
+margin: 0 auto;
+}
+
+#btn {
+  color: white;
+  background-color: green;
+  border: none;
+  padding: 5px 10px;
+}
+
+#aaa {
+  padding: 5px 10px;
+  width: 400px;
+}
+
+.kensaku {
+  margin : 30px 0;
+}
+
+table {
+  text-align: center;
+}
+
+td {
+  border-bottom: 1px solid #99CC00;
+}
+
