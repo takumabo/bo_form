@@ -3,23 +3,27 @@
 <head lang="ja">
   <meta charset="utf-8">
   <title>お問い合わせ内容</title>
+  <link rel="stylesheet" type="text/css" href="search.css">
 </head>
 <body>
-  <h1>お問い合わせ情報入力</h1>
+  <div class="top">
+  <h2>お問い合わせ情報入力</h2>
+  </div>
+
   <form method="POST" action="check.php">
     <div>
-      ニックネーム<br>
+      <p>名前</p>
       <input type="text" name="nickname">
     </div>
     <div>
-      メールアドレス<br>
+      <p>メールアドレス</p>
       <input type="text" name="email">
     </div>
     <div>
-      お問い合わせ<br>
+      <p>お問い合わせ</p>
       <textarea name="content"></textarea>
     </div>
-    <input type="submit" name="送信">
+    <input id="btn" type="submit" name="送信">
   </form>
 </body>
 </html>

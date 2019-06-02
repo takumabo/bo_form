@@ -1,14 +1,13 @@
 <?php
     require_once('function.php');
     require_once('dbconnect.php');
-
-    $stmt = $dbh->prepare('SELECT * FROM surveys');
+    
     $stmt->execute();
     $results = $stmt->fetchAll();
 ?>
 
     <!DOCTYPE html>
-    <html lang="UTF-8">
+    <html lang="ja">
     <head>
         <meta charset="utf-8">
         <title>Document</title>
